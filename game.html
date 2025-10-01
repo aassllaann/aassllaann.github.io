@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prim's E-shrines</title>
+  <style>
+  @font-face {
+  font-family: 'Uranus_Pixel_11Px';
+  src: url('./fronts/dreamwish.ttf') format('truetype');
+   }
+
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      background-image: url('images/游戏界面.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: 'Uranus_Pixel_11Px', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: rgba(19, 255, 251, 0.845);
+      font-size: 6em;
+      margin-bottom: 0.2em;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
+      font-family: 'Uranus_Pixel_11Px', sans-serif;
+    }
+
+    /* home样式 */
+    .home-link {
+  font-size: 1.2em;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+  transition: text-shadow 0.3s ease;
+  margin-top: 20px; /* 按钮间距 */
+  display: inline-block;
+}
+
+.home-link:hover {
+  text-shadow: 0 0 20px white, 0 0 40px white, 0 0 60px white;
+}
+
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .shrine-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      text-decoration: none;
+    }
+
+    .shrine-button img {
+      border-radius: 10px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+      cursor: pointer;
+      display: block;
+    }
+
+    .shrine-button img:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 25px white);
+    }
+
+    .label {
+      color: white;
+      font-size: 1.1em;
+      margin-top: 8px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    }
+
+    .shrine-button:hover .label {
+      opacity: 1;
+    }
+
+    .img-small {
+      max-width: 160px;
+    }
+
+    .img-medium {
+      max-width: 180px;
+    }
+
+    .img-large {
+      max-width: 300px;
+    }
+
+    /* 手机端 */
+    @media (max-width: 600px) {
+      .img-large {
+        max-width: 90vw;
+      }
+
+      .img-medium {
+        max-width: 80vw;
+      }
+
+      .img-small {
+        max-width: 70vw;
+      }
+    }
+    
+    .intro-text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: white;
+  text-align: center;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>G1A1M1E1S</h1>
+
+ <div class="intro-text">
+      <p>everything I'm obsessed with...<br>
+      欢迎来到我的电子神龛...这里基本上是这个网站的核心<br>
+      点击下列图标选择感兴趣的内容。</p>
+    </div>
+
+    <div class="button-row">
+      <a class="shrine-button" href="https://penguinchips.neocities.org/bob">
+        <img src="https://cdn.jsdelivr.net/gh/driedpenguin/image/rframe3.png" alt="Shrine1" class="img-small">
+        <div class="label">robert smith</div>
+      </a>
+
+      <a class="shrine-button" href="https://penguinchips.neocities.org/robingallith">
+        <img src="https://cdn.jsdelivr.net/gh/driedpenguin/image/gallithframe4.png" alt="Shrine2" class="img-large">
+        <div class="label">robingallith</div>
+      </a>
+
+      <a class="shrine-button" href="https://penguinchips.neocities.org/subbie">
+        <img src="https://cdn.jsdelivr.net/gh/driedpenguin/image/sframe4.PNG" alt="Shrine3" class="img-small">
+        <div class="label">simon gallup</div>
+      </a>
+
+      <a class="shrine-button" href="https://penguinchips.neocities.org/cure">
+        <img src="https://cdn.jsdelivr.net/gh/driedpenguin/image/cureframe.PNG" alt="Shrine4" class="img-small">
+        <div class="label">the cure</div>
+      </a>
+
+      <a class="shrine-button" href="https://penguinchips.neocities.org/antidote">
+        <img src="https://cdn.jsdelivr.net/gh/driedpenguin/image/zzframe.PNG" alt="Shrine5" class="img-medium">
+        <div class="label">芷遮 (original characters)</div>
+      </a>
+    </div>
+  
+    <a class="home-link" href="./index.html">home</a>
+    <p>under construction...</p>
+  </div>
+</body>
+</html>
